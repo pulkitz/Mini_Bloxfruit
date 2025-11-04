@@ -16,29 +16,47 @@ dig_list = [
 names = ["Bandit", "Marine", "Thug", "Hunter", "Raider", "Warlord", "Admiral", "Assassin"]
 titles = ["of the East", "the Ruthless", "from North Blue", "the Silent", "the Unseen", "of Darkness", "the Mighty"]
 
-# Fruit rarity and power level
-fruits = {
-    None: 0,  # no fruit user
-    "Chop-Chop Fruit": 1,
-    "Flame-Flame Fruit": 2,
-    "Ice-Ice Fruit": 2,
-    "Dark-Dark Fruit": 3,
-    "Quake-Quake Fruit": 4,
-    "Lightning Fruit": 4
+fruit_power = {
+    "None": 0,
+    "Bomb_Fruit": 1,
+    "Flame_Fruit": 2,
+    "Light_Fruit": 3,
+    "Dark_Fruit": 4,
+    "Spirit_Fruit": 5
 }
 
-# Melee weapon strength
-weapons = {
-    "Wooden Bat": 1,
-    "Cutlass": 2,
-    "Dagger": 2,
-    "Dual Katana": 3,
-    "Dark Saber": 4,
-    "Titan Blade": 5
+weapon_power = {
+    "Wooden_Sword": 1,
+    "Iron_Sword": 2,
+    "Katana": 3,
+    "Dark_Blade": 5
 }
 
 # Base reward tiers (these will get multiplied)
 base_rewards = [50, 100, 200, 400, 800, 1500, 2500]
+
+def generate_enemy(level):
+        name = random.choice(names) + " " + random.choice(titles)
+        fruit = random.choice(list(fruit_power.keys()))
+        weapon = random.choice(list(weapon_power.keys()))
+        base_level = fruit_power[fruit] + weapon_power[weapon]
+        variation = random.randint(-1, 2) 
+        enemy_level = base_level + level //2 + variation
+        if enemy_level < 1:
+                enemy_level = 1
+
+        return {
+                "name": name,
+                "fruit": fruit,
+                "weapon": weapon,
+                "level": enemy_level
+        }
+
+def win_prob(level, enemy_level):
+        level_diff = level -enemy_level
+
+        prob = 50 + (level_diff * 10)
+        return max(10, min(90, prob))
 
 def dig():
         global level 
