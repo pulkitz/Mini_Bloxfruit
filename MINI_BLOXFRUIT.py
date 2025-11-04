@@ -72,6 +72,9 @@ while True:
 
                         else:
                           print("you got " + D)
+
+                        if level %2 == 0:
+                                print(f"LEVEL UP!! you are now level {int(level)}")
                         
                         if "belly" in D:#for belly addition---------------------------------------------------------------------------------
                                 amount = int(D.split()[0])
