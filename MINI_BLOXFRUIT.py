@@ -45,7 +45,7 @@ while True:
 
 #COOL DOWN TASKS
         if now - last_used >= cool : 
-                #DIG TASK
+                #DIG TASK------------------------------------------------------------------------------
                 if inp1 == 1 :
                         D =  dig()
                         print("diging")
@@ -72,7 +72,7 @@ while True:
                         else:
                           print("you got " + D)
                         
-                        if "belly" in D:
+                        if "belly" in D:#for belly addition---------------------------------------------------------------------------------
                                 amount = int(D.split()[0])
                                 if "belly" in inv:
                                                 inv["belly"] += amount
@@ -83,14 +83,14 @@ while True:
                                                 inv[D] += 1
                                 else:                     
                                                 inv[D] = 1
-
+#---------------------------------------------------------------------------------------------
 
                         last_used = now
                         time.sleep(3)
                         
                 else :
                         print("invalid ")
-
+                #---------------------------------------------------------------------------------------------
         else:
                 print("wait for 5 seconds")
                 time.sleep(3)
