@@ -45,9 +45,18 @@ while True:
 
 #COOL DOWN TASKS
         if now - last_used >= cool : 
+                #DIG TASK
                 if inp1 == 1 :
                         D =  dig()
                         print("diging")
+                        time.sleep(0.5)
+                        print(".")
+                        time.sleep(0.5)
+                        print("..")
+                        time.sleep(0.5)
+                        print("...")
+                        time.sleep(0.5)
+                        print("....")
                         if D == "Ancient_Relic":
                                 print("CONGRATS YOU FOUND A LEGENDARY ITEM!!!")
                                 print("you got " + D)
