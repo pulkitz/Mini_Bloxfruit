@@ -13,6 +13,33 @@ dig_list = [
     ("Ancient_Relic", 0.01) #Legendary Item
 ]
 
+names = ["Bandit", "Marine", "Thug", "Hunter", "Raider", "Warlord", "Admiral", "Assassin"]
+titles = ["of the East", "the Ruthless", "from North Blue", "the Silent", "the Unseen", "of Darkness", "the Mighty"]
+
+# Fruit rarity and power level
+fruits = {
+    None: 0,  # no fruit user
+    "Chop-Chop Fruit": 1,
+    "Flame-Flame Fruit": 2,
+    "Ice-Ice Fruit": 2,
+    "Dark-Dark Fruit": 3,
+    "Quake-Quake Fruit": 4,
+    "Lightning Fruit": 4
+}
+
+# Melee weapon strength
+weapons = {
+    "Wooden Bat": 1,
+    "Cutlass": 2,
+    "Dagger": 2,
+    "Dual Katana": 3,
+    "Dark Saber": 4,
+    "Titan Blade": 5
+}
+
+# Base reward tiers (these will get multiplied)
+base_rewards = [50, 100, 200, 400, 800, 1500, 2500]
+
 def dig():
         global level 
         #level up system------------------------------------------------------------
@@ -93,7 +120,7 @@ while True:
                                                 inv[D] += 1
                                 else:                     
                                                 inv[D] = 1
-#---------------------------------------------------------------------------------------------
+                        #---------------------------------------------------------------------------------------------
 
                         last_used = now
                         time.sleep(3)
