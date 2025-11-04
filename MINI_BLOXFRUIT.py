@@ -40,8 +40,8 @@ def generate_enemy(level):
         fruit = random.choice(list(fruit_power.keys()))
         weapon = random.choice(list(weapon_power.keys()))
         base_level = fruit_power[fruit] + weapon_power[weapon]
-        variation = random.randint(-1, 2) 
-        enemy_level = base_level + level //2 + variation
+        variation = random.choice([-1, 2, 0, -2, 1]) 
+        enemy_level = (base_level + level) //2 + variation
         if enemy_level < 1:
                 enemy_level = 1
 
@@ -146,6 +146,25 @@ while True:
                 else :
                         print("invalid ")
                 #---------------------------------------------------------------------------------------------
+                if inp1 == 2:
+                        enemy = generate_enemy(level)
+                        print(f"A wild {enemy['name']} appeared! (Level {enemy['level']}, Fruit: {enemy['fruit']}, Weapon: {enemy['weapon']})")
+                        win_probability = win_prob(level, enemy['level'])
+                        print(f"Your chance to win is {win_probability}%")
+                        print("Fighting...")
+                        time.sleep(0.25)
+                        print(".")
+                        time.sleep(0.25)
+                        print("..")
+                        time.sleep(0.25)
+                        print("...")
+                        time.sleep(0.25)
+                        print("....")
+                        if random.randint(1,100) <= win_probability:
+                                print("you won the battle!")
+                        else :
+                                print("you lost the battle!")
+                                last_used = now 
         else:
                 print("wait for 5 seconds")
                 time.sleep(3)
