@@ -18,7 +18,7 @@ def dig():
         return random.choices(items, prob)[0]
 
 inv = {}
-
+level = 0
 last_used = 0
 while True:
         print("*******************WELCOME*******************")
@@ -57,6 +57,7 @@ while True:
                         print("...")
                         time.sleep(0.5)
                         print("....")
+                        level += 0.5 #for level increase
                         if D == "Ancient_Relic":
                                 print("CONGRATS YOU FOUND A LEGENDARY ITEM!!!")
                                 print("you got " + D)
