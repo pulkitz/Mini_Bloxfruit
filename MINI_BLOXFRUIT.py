@@ -48,7 +48,17 @@ while True:
                 if inp1 == 1 :
                         D =  dig()
                         print("diging")
-                        print("you got " + D)
+                        if D == "Ancient_Relic":
+                                print("CONGRATS YOU FOUND A LEGENDARY ITEM!!!")
+
+                        elif D == "Dragon_fruit":
+                                print("WOW YOU FOUND A MYTHICAL ITEM!!!")
+
+                        elif D == "Phoenix_fruit":
+                                print("NICE YOU FOUND A RARE ITEM!!!")
+
+                        else:
+                          print("you got " + D)
                         
                         if "belly" in D:
                                 amount = int(D.split()[0])
