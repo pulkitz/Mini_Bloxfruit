@@ -14,6 +14,13 @@ dig_list = [
 ]
 
 def dig():
+        global level 
+        #level up system------------------------------------------------------------
+        if level %1 == 0:
+                print(f"LEVEL UP!! you are now level {int(level)}")
+        else:
+                pass
+        #---------------------------------------------------------------------------
         items, prob = zip(*dig_list)
         return random.choices(items, prob)[0]
 
@@ -73,8 +80,7 @@ while True:
                         else:
                           print("you got " + D)
 
-                        if level %2 == 0:
-                                print(f"LEVEL UP!! you are now level {int(level)}")
+                     
                         
                         if "belly" in D:#for belly addition---------------------------------------------------------------------------------
                                 amount = int(D.split()[0])
