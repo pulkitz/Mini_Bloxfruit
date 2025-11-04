@@ -50,12 +50,15 @@ while True:
                         print("diging")
                         if D == "Ancient_Relic":
                                 print("CONGRATS YOU FOUND A LEGENDARY ITEM!!!")
+                                print("you got " + D)
 
                         elif D == "Dragon_fruit":
                                 print("WOW YOU FOUND A MYTHICAL ITEM!!!")
+                                print("you got " + D)
 
                         elif D == "Phoenix_fruit":
                                 print("NICE YOU FOUND A RARE ITEM!!!")
+                                print("you got " + D)
 
                         else:
                           print("you got " + D)
