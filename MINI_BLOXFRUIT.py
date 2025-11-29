@@ -162,6 +162,11 @@ while True:
                         else :
                                 print("you lost the battle!")
                                 last_used = now 
+
+                if inp1 == 3:
+                        print("Trading feature coming soon!")
+                        last_used = now
+
         else:
                 print("wait for 5 seconds")
                 time.sleep(3)
