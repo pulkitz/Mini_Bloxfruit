@@ -148,20 +148,26 @@ while True:
                         print(f"A wild {enemy['name']} appeared! (Level {enemy['level']}, Fruit: {enemy['fruit']}, Weapon: {enemy['weapon']})")
                         win_probability = win_prob(level, enemy['level'])
                         print(f"Your chance to win is {win_probability}%")
-                        print("Fighting...")
-                        time.sleep(0.25)
-                        print(".")
-                        time.sleep(0.25)
-                        print("..")
-                        time.sleep(0.25)
-                        print("...")
-                        time.sleep(0.25)
-                        print("....")
-                        if random.randint(1,100) <= win_probability:
-                                print("you won the battle!")
-                        else :
-                                print("you lost the battle!")
-                                last_used = now 
+                        cond = input("Do you want to fight? (y/n): ")
+                        if cond.lower() == 'y':
+                                print("Fighting...")
+                                time.sleep(0.25)
+                                print(".")
+                                time.sleep(0.25)
+                                print("..")
+                                time.sleep(0.25)
+                                print("...")
+                                time.sleep(0.25)
+                                print("....")
+                                if random.randint(1,100) <= win_probability:
+                                        print("you won the battle!")
+                                else :
+                                        print("you lost the battle!")
+                                        last_used = now 
+
+                        else:
+                                print("you Ran Away!, come back when you are ready!")
+                                last_used = now
 
                 if inp1 == 3:
                         print("Trading feature coming soon!")
