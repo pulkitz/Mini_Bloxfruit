@@ -91,7 +91,11 @@ while True:
 #NON-COOL DOWN TASKS
         if inp1 == 4 :
                 for item, qty in inv.items():
+                        print("-----INVENTORY-----")
+                        print("")
                         print(f"{item}: {qty}")
+                        print("")
+                        print("-------------------")
 
                 continue 
 
