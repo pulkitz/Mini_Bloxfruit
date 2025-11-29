@@ -96,7 +96,7 @@ while True:
                         print(f"{item}: {qty}")
                         print("")
                         print("-------------------")
-                        time.sleep(4)
+                time.sleep(4)
 
                 continue 
 
