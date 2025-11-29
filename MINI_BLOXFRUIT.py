@@ -142,9 +142,6 @@ while True:
 
                         last_used = now
                         time.sleep(3)
-                        
-                else :
-                        print("invalid ")
                 #---------------------------------------------------------------------------------------------
                 if inp1 == 2:
                         enemy = generate_enemy(level)
