@@ -73,7 +73,6 @@ python bloxfruit.py
 ---
 
 ### 🧠 Future Ideas
-Add combat mechanics for “KILL” option ⚔️
 
 Trading system between items 💱
 
