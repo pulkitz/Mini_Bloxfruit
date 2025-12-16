@@ -69,7 +69,10 @@ cd Mini-Bloxfruit
 bash
 Copy code
 python bloxfruit.py
-🧠 Future Ideas
+```
+---
+
+### 🧠 Future Ideas
 Add combat mechanics for “KILL” option ⚔️
 
 Trading system between items 💱
@@ -78,6 +81,8 @@ Save inventory data to a file 💾
 
 Color-coded rarity messages (gold = legendary!) 🌈
 
-🧑‍💻 Author
+---
+
+###🧑‍💻 Author
 Pulkit — a student, dev, and the proud creator of Mini Bloxfruit.
 If you like this, star ⭐ the repo and flex your luck 🍀
