@@ -83,6 +83,6 @@ Color-coded rarity messages (gold = legendary!) 🌈
 
 ---
 
-###🧑‍💻 Author
+### 🧑‍💻 Author
 Pulkit — a student, dev, and the proud creator of Mini Bloxfruit.
 If you like this, star ⭐ the repo and flex your luck 🍀
