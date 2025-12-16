@@ -63,8 +63,8 @@ Each item has its own drop probability:
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/<your-username>/Mini-Bloxfruit.git
-cd Mini-Bloxfruit
+git clone https://github.com/pulkitz/Mini_Bloxfruit.git
+cd Mini_Bloxfruit
 2. Run the game
 bash
 Copy code
