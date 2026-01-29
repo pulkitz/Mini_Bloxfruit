@@ -72,9 +72,11 @@ def dig():
 inv = {}
 level = 0
 last_used = 0
+print("*******************WELCOME*******************")
+print("*************TO MINI BLOXFRUIT*******************")
+
 while True:
-        print("*******************WELCOME*******************")
-        print("*************TO MINI BLOXFRUIT*******************")
+
         print("")
         print("What do you want to do?? choose only the number:")
         print("1. DIG")
@@ -165,9 +167,17 @@ while True:
                                 time.sleep(0.25)
                                 print("....")
                                 if random.randint(1,100) <= win_probability:
+                                        for i in range(3):
+                                                i += 1
+                                                print("...........")
                                         print("you won the battle!")
+                                        for j in range(3):
+                                                j += 1
+                                                print("...........")
+                                        level += 2 #level increase on win
+
                                 else :
-                                        print("you lost the battle!")
+                                        print("you lost the battle!") 
                                         last_used = now 
 
                         else:
