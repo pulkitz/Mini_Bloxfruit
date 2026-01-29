@@ -185,7 +185,13 @@ while True:
                                 last_used = now
 
                 if inp1 == 3:
+                        for i in range(5):
+                                print(design)
+                                design += "."
+                                time.sleep(0.5)
                         print("Trading feature coming soon!")
+                        design = "."
+                        
                         last_used = now
 
         else:
